@@ -126,7 +126,7 @@
               <span>客户消息</span><strong data-message-count>0</strong>
             </button>
             <button type="button" data-admin-tab="works">
-              <span>作品管理</span><strong>5</strong>
+              <span>作品管理</span><strong data-work-count>5</strong>
             </button>
             <button class="admin-login" type="button" data-open-auth>登录后台 <span>→</span></button>
           </div>
@@ -174,8 +174,8 @@
           </blockquote>
         </div>
         <div class="about-index" aria-label="张国强资料索引">
-          <div><span>BASE</span><strong>福州为主</strong></div>
-          <div><span>ROOTS</span><strong>福州</strong></div>
+          <div><span>BASE</span><strong data-base-city>福州为主</strong></div>
+          <div><span>ROOTS</span><strong data-roots>福州</strong></div>
           <div><span>FOCUS</span><strong>人 / 情感 / 关系</strong></div>
           <div><span>STUDIO</span><strong>双映画</strong></div>
         </div>
@@ -185,7 +185,7 @@
         <div class="booking-copy">
           <p class="kicker">RESERVATION</p>
           <h2>预约拍摄</h2>
-          <p>提交后会写入本地数据存储，并同步到后台预览。后续可替换为真实数据库或云端表单。</p>
+          <p>提交后会优先写入飞书多维表格后台；未配置接口时，会暂存在当前浏览器本地。</p>
         </div>
         <form class="booking-form" data-booking-form>
           <label>
@@ -224,10 +224,10 @@
       <section class="admin-console" id="admin">
         <div class="section-head wide">
           <div>
-            <p class="kicker">LOCAL ADMIN</p>
-            <h2>基础后台数据</h2>
+            <p class="kicker">DATA SOURCE</p>
+            <h2>飞书后台数据</h2>
           </div>
-          <p>当前为前端本地持久化原型：注册用户、预约表单、档期状态都会保存到浏览器 localStorage。</p>
+          <p><span data-data-source>正在检测数据源</span>。作品、档期、预约都可以在飞书多维表格中维护。</p>
         </div>
         <div class="console-grid">
           <div class="console-card">
@@ -248,7 +248,7 @@
         <p>婚礼摄影 / 家庭记录 / 旅行记录</p>
       </div>
       <div class="footer-links">
-        <a href="https://www.xiaohongshu.com/user/profile/5aa7fb00e8ac2b14c76efef4?xsec_source=pc_search" target="_blank" rel="noreferrer">小红书主页</a>
+        <a data-xhs-link href="https://www.xiaohongshu.com/user/profile/5aa7fb00e8ac2b14c76efef4?xsec_source=pc_search" target="_blank" rel="noreferrer">小红书主页</a>
         <a href="#booking">预约</a>
         <button type="button" data-open-auth>登录 / 注册</button>
       </div>
